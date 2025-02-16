@@ -3,11 +3,10 @@ import { ButtonComponent } from '../../shared/button/button.component';
 
 @Component({
   selector: 'app-main-view',
-  imports: [
-    ButtonComponent
-  ],
+  standalone: true,
+  imports: [ButtonComponent],
   templateUrl: './main-view.component.html',
-  styleUrl: './main-view.component.css'
+  styleUrls: ['./main-view.component.css']
 })
 export class MainViewComponent {
   handleButtonClick(event: Event): void {

@@ -1,16 +1,25 @@
-<header class="bg-[var(--color-Primary)] dark:bg-[var(--color-Primary-dark)] text-[var(--color-OnPrimary)] dark:text-[var(--color-OnPrimary-dark)] p-4 shadow-md">
+<header
+  class="bg-[var(--color-Primary)] dark:bg-[var(--color-Primary-dark)] text-[var(--color-OnPrimary)] dark:text-[var(--color-OnPrimary-dark)] p-4 shadow-md">
   <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-2xl font-bold">My App</h1>
+    <h1 class="text-2xl font-bold">Bucksbuddy</h1>
     <nav>
       <ul class="flex space-x-6">
-        <nav>
-          <ul class="flex space-x-6">
-            <li><a routerLink="/" class="hover:underline">Home</a></li>
-            <li><a routerLink="/new-journey" class="hover:underline">New Journey</a></li>
-            <li><a routerLink="/settings" class="hover:underline">Settings</a></li>
-            <li><a href="#" class="hover:underline">Logout</a></li>
-          </ul>
-        </nav>
+        <li>
+          <a routerLink="/"
+             [routerLinkActiveOptions]="{ exact: true }"
+             routerLinkActive="underline"
+             class="hover:underline">Home</a>
+        </li>
+        <li>
+          <a routerLink="/new-journey" routerLinkActive="underline" class="hover:underline">New Journey</a>
+        </li>
+        <li>
+          <a routerLink="/settings" routerLinkActive="underline" class="hover:underline">Settings</a>
+        </li>
+        <li>
+          <!-- For logout, you might later call a logout function; for now, this is a placeholder -->
+          <a href="#" class="hover:underline">Logout</a>
+        </li>
       </ul>
     </nav>
   </div>

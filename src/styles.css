@@ -1,1 +1,57 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-Primary: #226a4c;
+  --color-OnPrimary: #ffffff;
+  --color-PrimaryContainer: #aaf2cc;
+  --color-OnPrimaryContainer: #005236;
+
+  --color-Secondary: #4d6357;
+  --color-OnSecondary: #ffffff;
+  --color-SecondaryContainer: #d0e8d8;
+  --color-OnSecondaryContainer: #364b40;
+
+  --color-Tertiary: #3d6473;
+  --color-OnTertiary: #ffffff;
+  --color-TertiaryContainer: #c0e9fb;
+  --color-OnTertiaryContainer: #244c5a;
+
+  --color-Error: #ba1a1a;
+  --color-OnError: #ffffff;
+  --color-ErrorContainer: #ffdad6;
+  --color-OnErrorContainer: #93000a;
+
+  --color-Surface: #f5fbf5;
+  --color-OnSurface: #171d19;
+  --color-Outline: #707973;
+  --color-OutlineVariant: #c0c9c1;
+  --color-Shadow: #000000;
+
+  --color-Primary-dark: #8ed5b0;
+  --color-OnPrimary-dark: #003824;
+  --color-PrimaryContainer-dark: #005236;
+  --color-OnPrimaryContainer-dark: #aaf2cc;
+
+  --color-Secondary-dark: #b4ccbd;
+  --color-OnSecondary-dark: #20352a;
+  --color-SecondaryContainer-dark: #364b40;
+  --color-OnSecondaryContainer-dark: #d0e8d8;
+
+  --color-Tertiary-dark: #a5cdde;
+  --color-OnTertiary-dark: #063543;
+  --color-TertiaryContainer-dark: #244c5a;
+  --color-OnTertiaryContainer-dark: #c0e9fb;
+
+  --color-Error-dark: #ffb4ab;
+  --color-OnError-dark: #690005;
+  --color-ErrorContainer-dark: #93000a;
+  --color-OnErrorContainer-dark: #ffdad6;
+
+  --color-Surface-dark: #0f1511;
+  --color-OnSurface-dark: #dee4de;
+  --color-Outline-dark: #8a938c;
+  --color-OutlineVariant-dark: #404943;
+  --color-Shadow-dark: #000000;
+}
+

@@ -1,0 +1,10 @@
+<button
+  [type]="type"
+  [disabled]="disabled"
+  (click)="onClick($event)"
+  class="bg-[var(--color-Primary)] dark:bg-[var(--color-Primary-dark)]
+         text-[var(--color-OnPrimary)] dark:text-[var(--color-OnPrimary-dark)]
+         font-semibold py-2 px-4 rounded transition duration-200
+         hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed">
+  {{ label }}
+</button>
